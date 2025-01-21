@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lugar de residencia</h1>
+    <p>Ingrese los detalles de su ciudad:</p>
+    <input type="text" id="ciudad"><br>
+    <p>Ingrese el nombre de su pais:</p>
+    <input type="text" id="pais"><br>
+    <p id="myp"></p>
+    <button onclick="mostrarDetalles()">Mostrar Detalles</button>
+    <script>
+        const mostrarDetalles = () => {
+            let city = document.getElementById("ciudad").value;
+            let country = document.getElementById("pais").value;
+            document.getElementById("myp").innerHTML = "Los detalles de la ciudad son: " + city;
+            window.alert("Los detalles de la ciudad son: " + city);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ingrese dos números:</h1>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <p id="parrafo"></p>
+    <button onclick="suma()">Sumar</button>
+    <script>
+        const suma = () => {
+            let num1=parseInt(document.getElementById("numero1").value);
+            let num2=parseInt(document.getElementById("numero2").value);
+            let suma=num1+num2;
+            document.getElementById("parrafo").innerHTML="La suma es: "+suma;
+            window.alert("La suma es: "+suma);
+        }
+    </script>
+</body>
+</html>

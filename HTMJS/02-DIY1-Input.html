@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="block">
+        <button onclick="enlarge()">click me</button>
+        <button onclick="reset()">reset caption</button>
+        <p id="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officia consequatur pariatur
+            voluptas eligendi repellat dicta sapiente natus exercitationem porro tempore fugiat iusto obcaecati beatae
+            sit, dolorem perspiciatis! Ullam, quo.</p>
+    </div>
+
+    <script>
+
+        function reset() {
+            let bloque = document.getElementById("block");
+            bloque.style.backgroundColor = "yellow";
+            bloque.style.width="10px";  
+        }
+
+        function enlarge(){
+            let bloque = document.getElementById("block");
+            let ancho = bloque.style.width;
+            let anchon=parseInt(ancho.split("p"));
+            anchon=anchon+10;
+            let ancho2=anchon+"px";
+            bloque.style.width=ancho2;
+        }
+    </script>
+</body>
+
+</html>

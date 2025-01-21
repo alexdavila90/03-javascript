@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calcula suma, ppromedio y arriba de 1000</h1>
+    <p id="suma"></p>
+    <p id="promedio"></p>
+    <p id="arribaMil"></p>
+    <button onclick="calcular()">Calcular</button>
+    <script>
+        const calcular = () => {
+            let suma = 0;
+            let promedio = 0;
+            let arribaMil = "";
+            for (let i = 0; i < 5; i++) {
+                let inputData = parseInt(prompt(`Por favor ingresa el ${i + 1}° salario:`));
+                console.log(inputData);
+                console.log(typeof (inputData));
+                if (isNaN(inputData)) {
+                    alert("Solo se permiten números enteros, por favor intente de nuevo.")
+                    i--;
+                }
+                else {
+                    suma += inputData;
+                    if (inputData > 1000) {
+                        arribaMil += inputData + " ";
+                    }
+                }
+            }
+            promedio = suma / 5;
+            document.getElementById("suma").innerHTML = "La suma es: "+suma;
+            document.getElementById("promedio").innerHTML = "El promedio es: "+promedio;
+            document.getElementById("arribaMil").innerHTML = "Los sueldos arriba de mil son: "+arribaMil;
+        }
+    </script>
+</body>
+
+</html>
