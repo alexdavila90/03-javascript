@@ -1,1 +1,1 @@
-console.log("Es es un js de prueba");
+console.log("Es es un js de prueba ok");
