@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Piramide con For</h1>
+    <button onclick="crearPiramide()">clic aqui</button>
+    <p id="pSalida"></p>
+    <script>
+        const crearPiramide = () => {
+            let inicioAsterisco = 5;
+            let finAsterisco = 6;
+            for (let i = 0; i < 6; i++) {
+                for (let j = 0; j < inicioAsterisco; j++) {
+                    document.getElementById("pSalida").innerText += '\u00A0\u00A0';
+                }
+                for (let k = inicioAsterisco; k < finAsterisco; k++) {
+                    document.getElementById("pSalida").innerText += "*";
+                }
+                document.getElementById("pSalida").innerText += "\n";
+                inicioAsterisco--;
+                finAsterisco++;
+            }
+        }
+    </script>
+</body>
+
+</html>
