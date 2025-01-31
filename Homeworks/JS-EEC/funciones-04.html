@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Funciones 04</h1>
+<button onclick="getMaxNumber([1,6,2,9])">Click</button>
+
+<body>
+    <script>
+        const getMaxNumber = function (arreglo) {
+            let maxNumber = Math.max(...arreglo);
+            console.log(maxNumber);
+            window.alert("EL número mayor es: " + maxNumber);
+            return maxNumber;
+        }
+    </script>
+</body>
+
+</html>

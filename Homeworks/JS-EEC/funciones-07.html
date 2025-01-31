@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Funciones 07</h1>
+<button onclick="findNumber([1,6,2,9],6)">Click</button>
+
+<body>
+    <script>
+        function findNumber(array, number) {
+            let ifNumberPresent = array.indexOf(number);
+            console.log(ifNumberPresent);
+            if (ifNumberPresent >= 0) {
+                window.alert("El número SI existe");
+            }
+            else {
+                window.alert("El número NO existe");
+            }
+
+            //return ifNumberPresent >= 0 ? console.log(true) : console.log(false);
+        }
+    </script>
+</body>
+
+</html>
