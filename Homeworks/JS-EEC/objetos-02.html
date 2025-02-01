@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Objetos 02</h1>
+    <button>Click</button>
+    <script>
+        let persona1 = new Object(
+            {
+                firstname: "Michael",
+                lastname: "Jordan",
+                age: 49
+            }
+
+        );
+
+        let persona2 = new Object(
+            {
+                firstname: "Lara",
+                lastname: "Bili",
+                age: 74
+            }
+        );
+
+        function Persona(firstName, lastName, age){
+            this.firstName=firstName;
+            this.lastName=lastName;
+            this.age=age;
+        }
+
+        let person1=new Persona("Michael","Jordan",49);
+        let person2=new Persona("Lara","Bili",74);
+
+        console.log(person1);
+        console.log(person2);
+    </script>
+</body>
+
+</html>
